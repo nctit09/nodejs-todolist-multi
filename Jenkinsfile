@@ -1,16 +1,15 @@
  pipeline {
      agent any
      stages {
-            stage("Get code gitlab") {
+            stage("Get code github from MAIN") {
                steps {
-                echo 'gitlab'
-                git branch: 'main', url: 'https://gitlab.com/cscmobistudios/ct_demo_nodejs_todolist.git'       
+                echo 'gitlab MAIN'
                }
             }
-            stage("Build Dockerfile"){
-                steps{
+            // stage("Build Dockerfile"){
+            //     steps{
                     
-                }
-            }
+            //     }
+            // }
         }
     }
